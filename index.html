@@ -1,0 +1,33 @@
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <ul class="list-group">
+        <li class="list-group-item active"><label id="userName"></label></li>
+        <li>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Message</span>
+                </div>
+                <input id="userMessage" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-group-append">
+                    <button onclick="writeMessage()" class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="list-group" id="globalMessages">
+        <li>some content</li>
+    </ul>
+
+</body>
+
+</html>
